@@ -25,7 +25,7 @@ export async function handleProcess(
     const datePart = now.toISOString().slice(0, 10);
     const timePart = now.toTimeString().split(" ")[0].replace(/:/g, "-");
     const fileNameWithTimestamp = `${datePart}_${timePart}_${originalFileName}`;
-
+    console.log(formattedUri);
     formData.append("file", {
       uri: formattedUri,
       type: "image/jpeg",

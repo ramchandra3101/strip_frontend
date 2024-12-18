@@ -41,7 +41,7 @@ const CameraButton: React.FC = () => {
         return;
       }
       const result = await ImagePicker.launchCameraAsync({
-        mediaTypes: ImagePicker.MediaTypeOptions.Images,
+        mediaTypes: ImagePicker.MediaType.Images,
         quality: 1,
       });
 

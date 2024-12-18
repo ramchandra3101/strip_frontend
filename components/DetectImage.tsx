@@ -159,7 +159,7 @@ const DetectImage: React.FC<DetectImageProps> = ({ route }) => {
             <Text
               style={[
                 styles.resultText,
-                { color: result.includes("Positive") ? "#28a745" : "#dc3545" },
+                { color: result.includes("Positive") ? "#dc3545" : "#28a745" },
               ]}
             >
               {result}
